@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Webiste</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Style Css Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Style Css Link -->
+    <!---Swiper link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!---Swiper link-->
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+</head>
+<body>
+
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <div class="countdown-banner">
+            <p>Save 30% sitewide! Ends in</p>
+            <div class="countdown">
+              <div class="time-box"><span id="days">00</span>d</div>
+              <div class="time-box"><span id="hours">00</span>h</div>
+              <div class="time-box"><span id="minutes">00</span>m</div>
+              <div class="time-box"><span id="seconds">00</span>s</div>
+            </div>
+          </div>
+          <script src="script.js"></script>
+    </div>
+    <nav>
+      <input type="checkbox" id="show-search">
+      <input type="checkbox" id="show-menu">
+      <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+      <div class="content">
+        <div class="logo"><a href="index.html"><img src="assets/logo4.png" alt="" class="w-90"></a></div>
+        <ul class="nav links">
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"><span class="first">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Blog.html">Blog</a>
+          </li>
+        </ul>
+        </div>
+          <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+          <form action="#" class="search-box">
+              <input type="text" placeholder="Search" required>
+              <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+          </form>
+    </nav>
+    </header>
+    <!-- Header End -->
+
+<!----hero section start-->
+<section class="container-fluid bg p-0 ">
+  <div class="container-fluid p-0">
+  <div id="mainslide"  class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <div class="carousel-item active" >
+              <div>
+              <image src="assets/homesilde1.png" class="w-100 p-0" alt=""/>
+          </div>
+          <div class="container-fluid dream col-12">
+              <div class="row w-100">
+              <div class="col-8 "><h1>Experience the<br> Elegance of Leather</h1>
+              <p>Our premium leather sofas combine luxury with durability,<br> offering timeless appeal for any room.</p>
+          <a href="Shop.html" ><button>Explore Now</button></a>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="carousel-item">
+              <div>
+                  <image src="assets/homeslide2.png" class="w-100 p-0" alt=""/>
+              </div>
+          <div class="container-fluid dream col-12">
+              <div class="row w-100">
+              <div class="col-8"><h1>Modern Furniture for<br> Your Stylish Kitchen</h1>
+              <p>Discover our collection of sleek and modern kitchen sets that<br> bring a fresh, contemporary feel to any home.</p>
+          <a href="Shop.html"><button>Shop Modern</button></a>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div>
+          <div class="carousel-item">
+              <div>
+                  <image src="assets/homeslide3.png"  class="w-100 p-0"alt="">
+              </div>
+          <div class="container-fluid dream col-12">
+              <div class="row w-100 ">
+              <div class="col-8"><h1>Customize Your<br> Dining Chairs</h1>
+              <p>Choose from various fabrics, colors, and styles to create<br> dining chairs that perfectly match your vision.</p>
+          <a href="Shop.html"><button>Shop Now</button></a>
+          </div>
+          </div>
+          </div>
+      </div>
+  </div>
+ </div>
+  </section>
+  <!------hero section end-->
+
+  <!------collection section start-->
+  <section>
+ <div class="big-collection">
+  <div class="main-section">
+    <h2 class="main-heading">Categories</h2>
+    <p class="main-description">
+      Discover furniture that fits your style and space—explore our curated categories for every room.
+    </p>
+</div>
+  <div class="collection pt-3">
+   <div class="collect">
+    <div class="image">
+      <img src="assets/chairs1.png"  alt="...">
+      </div>
+        <div class="link">
+          <a href="">Chair</a>
+      </div>
+          </div>
+          <div class="collect">
+            <div class="image">
+              <img src="assets/chairs2.png"  alt="...">
+              </div>
+                <div class="link">
+                  <a href="">Chair</a>
+              </div>
+                  </div>
+                  <div class="collect">
+                    <div class="image">
+                      <img src="assets/sofas1.png"  alt="...">
+                      </div>
+                        <div class="link">
+                          <a href="">Sofa</a>
+                      </div>
+                          </div>
+                          <div class="collect">
+                            <div class="image">
+                              <img src="assets/bed.png"  alt="...">
+                              </div>
+                                <div class="link">
+                                  <a href="">Bed</a>
+                              </div>
+                                  </div>
+                                  <div class="collect">
+                                    <div class="image">
+                                      <img src="assets/sofas2.png"  alt="...">
+                                      </div>
+                                        <div class="link">
+                                          <a href="">Sofa</a>
+                                      </div>
+                                          </div>
+                                          <div class="collect">
+                                            <div class="image">
+                                              <img src="assets/chairs6.png"  alt="...">
+                                              </div>
+                                                <div class="link">
+                                                  <a href="">Chair</a>
+                                              </div>
+                                                  </div>
+                                                  <div class="collect">
+                                                    <div class="image">
+                                                      <img src="assets/dinningtable.png"  alt="...">
+                                                      </div>
+                                                        <div class="link">
+                                                          <a href="">Dinning Table</a>
+                                                      </div>
+                                                          </div>
+        </div>
+   </div>
+  </section>
+
+  <!-----collection section end-->
+  <!-- About Section Start -->
+  <section class="container-fluid pt-5" id="about">
+    <div class="main-section">
+      <h2 class="main-heading">About</h2>
+      <p class="main-description">
+        We are dedicated to crafting furniture that blends style, comfort, and functionality.<br> Explore pieces designed to elevate every corner of your home.
+      </p>
+  </div>
+    <div class="about">
+      <div class="about-img">
+        <img src="assets/about-img.avif" alt="">
+    </div>
+    <div class="about-text">
+        <h3>Furniture service About us</h3>
+        <p>Our furniture services are designed to bring your vision to life, offering a seamless experience from selection to delivery. We provide a wide range of stylish and durable furniture, tailored to suit your unique preferences and space requirements. With a commitment to quality craftsmanship and exceptional customer service, we ensure that every piece not only enhances your home but also reflects your personal style. Let us help you create a space that feels truly yours.</p>
+
+        <a href="About.html"><button id="about-btn">Read More...</button></a>
+    </div>
+    </div>
+    
+</section>
+<!-- About Section End -->
+
+  <!----Deals start---->
+  <section class=" Deal container">
+    <div>
+      <h2>Hot🔥deals for you</h2>
+      <p>Online shopping for retail sales direct to consumers</p>
+    </div>
+    <div class="deals ">
+      <span><i class="fa-sharp-duotone fa-solid fa-money-bill-1-wave"></i></span>
+      <h4>1.5% cashback</h4>
+      <p>Earn a 5% cashback reward on every furniture purchase you make!</p>
+    </div>
+    <div class="deals ">
+      <span><i class="fa-regular fa-calendar"></i></span>
+      <h4>30 day terms</h4>
+      <p>
+        Take advantage of our 30-day payment terms, completely interest-free!
+      </p>
+    </div>
+    <div class="deals ">
+      <span><i class="fa-sharp fa-solid fa-indian-rupee-sign"></i></span>
+      <h4>Save money</h4>
+      <p>
+        Discover unbeatable prices and save big money on top-quality
+        furniture!
+      </p>
+    </div>
+  </section>
+
+  <!-----Deals End----->
+
+  <!-----Products Start-->
+<section class="container product pt-5">
+  <div class="main-section">
+    <h2 class="main-heading">Explore Our Exclusive Furniture Collection</h2>
+    <p class="main-description">
+        Discover the finest selection of modern and stylish furniture. 
+        Crafted with elegance and durability, our products bring comfort and sophistication to your home.
+    </p>
+</div>
+  <div class="product-grid">
+    <div class="product-card">
+      <h4>Lounge Chair<span class="w-90 ps-5  heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p>Elegant lounge chair with a minimalist design and soft fabric.</p>
+      <img src="assets/chair1.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price"> ₹4,999</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=1"><button>Add to Cart</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <h4>Leather Armchair<span class="w-90 ps-4  heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p>Luxurious leather armchair with sturdy steel legs.</p>
+      <img src="assets/5.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price"> ₹7,499</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star "></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=2"><button>Add to Cart</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <h4>Wingback Chair<span class="w-90 ps-5 heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p> Stylish wingback chair with ergonomic design</p>
+      <img src="assets/2.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price"> ₹6,299</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=4"><button>Add to Cart</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <h4>Dining Table Set<span class="w-90 ps-5  heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p>Premium wooden dining set featuring a table and six chairs.</p>
+      <img src="assets/dinning.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price">₹12,999</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star "></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=8"><button>Add to Cart</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <h4>Wicker Chair<span class="w-90 ps-5 ms-5 heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p>Cozy outdoor wicker chair with plush cushions.</p>
+      <img src="assets/modernchair.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price">₹3,999</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=13"><button>Add to Cart</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <h4> Wooden Bed<span class="w-90 ps-5 ms-5 heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p>Sturdy wooden bed frame with a sleek and high-quality finish.</p>
+      <img src="assets/bedbg.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price">₹9,499</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=18"><button>Add to Cart</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <h4> Tufted Chair<span class="w-90 ps-5 ms-5 heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p> Modern tufted chair with soft upholstery and a stylish design.</p>
+      <img src="assets/chair3.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price">₹5,199</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=22"><button>Add to Cart</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="product-card">
+      <h4>Retro Sofa<span class="w-90 ps-5 ms-5 heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p>Vibrant orange sofa with a retro design.</p>
+      <img src="assets/sofabig2.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price">₹8,299</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star "></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=23"><button>Add to Cart</button></a>
+        </div>
+      </div>
+    </div>
+</section>
+ <!-----Products End-->
+
+ <!-----Banner Start-->
+ <section class="container-fluid main-banner pt-2 mt-5 text-center">
+  <div class="banner p-5">
+    <div class="pt-5">
+      <h5>Get Discount Up To 50%</h5>
+    <h2>Best Deal For Week</h2>
+    <p>Get up to 50% off this week and get offer <br>Don't miss</p>
+    <button class="btn-sucess"><a href="#">Order</a></button>
+</div>
+    </div>
+ </section>
+ <!-----Banner End-->
+   <!-----Products Start-->
+   <section class="container mt-5">
+    <div class="main-section">
+      <h2 class="main-heading">50% Off - Limited Time Offer!</h2>
+      <p class="main-description pb-2">
+        Don’t miss out on incredible savings! Enjoy 50% off on select furniture pieces. Upgrade your home with stylish furniture at unbeatable prices. Shop now and transform your space!
+      </p>
+  </div>
+    <div class="row">
+    <div class="col-md-3">
+      <div class="card product-card rounded-0 border-0 p-4">
+        <h4>Retro Sofa<span class="w-90 ps-5 ms-5 heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p>Vibrant orange sofa with a retro design.</p>
+      <img src="assets/sofabig2.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price">₹8,299</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star "></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=23"><button>Add to Cart</button></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card product-card rounded-0 border-0 p-4">
+        <h4>Dining Table Set<span class="w-90 ps-5  heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p>Premium wooden dining set featuring a table and six chairs.</p>
+      <img src="assets/dinning.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price">₹12,999</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star "></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=8"><button>Add to Cart</button></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card product-card rounded-0 border-0 p-4">
+        <h4>Wicker Chair<span class="w-90 ps-5 ms-5 heart"><i class="fa-regular fa-heart"></i></span></h4>
+      <p>Cozy outdoor wicker chair with plush cushions.</p>
+      <img src="assets/modernchair.png" alt="" srcset="">
+      <div class="row">
+        <div class="col-6">
+          <h6>Price : <span class="price">₹3,999</span></h6>
+      <div class="star">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star "></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+      </div>
+        </div>
+        <div class="col-6">
+          <a href="productdetails.html?id=13"><button>Add to Cart</button></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="card product-card rounded-0 border-0 p-4">
+        <h4>Lounge Chair<span class="w-90 ps-5  heart"><i class="fa-regular fa-heart"></i></span></h4>
+        <p>Elegant lounge chair with a minimalist design and soft fabric.</p>
+        <img src="assets/chair1.png" alt="" srcset="">
+        <div class="row">
+          <div class="col-6">
+            <h6>Price : <span class="price"> ₹4,999</span></h6>
+        <div class="star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star "></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+          </div>
+          <div class="col-6">
+            <a href="productdetails.html?id=1"><button>Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+   </section>
+ <!-----Products End-->
+<!------Gallery start-->
+<section class="gallery mt-5">
+  <div class="main-section">
+    <h2 class="main-heading">We are proud to present you <br> our furniture</h2>
+    <p class="main-description">
+      Quality is the easiest way to make beautiful products
+    </p>
+</div>
+  <div class="shop-flex">
+  <div class="shop-one">
+    <div class="image1"> 
+      <img src="assets/fgallery1.avif" alt=""/>
+      <div class="overlay">
+        <div class="text">
+          <h4>White Chair</h4>
+          <div class="font"><span>Furniture</span> / Design</div>
+        </div>
+        <div class="link">
+          <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+      </div>
+  <div class="image1">
+    <img src="assets/fgallery6.avif" alt=""/>
+    <div class="overlay">
+      <div class="text">
+        <h4>White Chair</h4>
+        <div class="font"><span>Furniture</span> / Design</div>
+      </div>
+      <div class="link">
+        <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="shop-one">
+    <div class="image1">
+      <img src="assets/fgallery2.avif" alt=""/>
+      <div class="overlay">
+        <div class="text">
+          <h4>White Chair</h4>
+          <div class="font"><span>Furniture</span> / Design</div>
+        </div>
+        <div class="link">
+          <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+      </div>
+    <div class="image1">
+      <img src="assets/fgallery5.jpg" alt=""/>
+      <div class="overlay">
+        <div class="text">
+          <h4>White Chair</h4>
+          <div class="font"><span>Furniture</span> / Design</div>
+        </div>
+        <div class="link">
+          <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="shop3">
+      <div class="image1">
+        <img src="assets/fgallery4.jpg" alt="">
+        <div class="overlay">
+          <div class="text">
+            <h4>White Chair</h4>
+            <div class="font"><span>Furniture</span> / Design</div>
+          </div>
+          <div class="link">
+            <a href="#">Shop Now <i class="fas fa-long-arrow-alt-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ </section>
+ <!------Gallery end-->
+ <!------Reviews Start---->
+<!------ Reviews Start ---->
+<section class="Testmonials container mb-5 pb-2 mt-0">
+  <div class="main-section">
+    <h2 class="main-heading">What Our Customers Say😊</h2>
+    <p class="main-description">
+      "Real experiences, real satisfaction – hear from our happy customers!"
+    </p>
+</div>
+  <div class="section-content">
+    <div class="slider-container swiper">
+      <div class="swiper-wrapper">
+        <div class="testmonial swiper-slide">
+          <div class="card">
+            <img src="assets/review1.avif" alt="User" class="user-image rounded-circle" />
+          <h3 class="name">Priya Verma</h3>
+          <i class="feedback">“Fast delivery and great customer service. The dining table exceeded my expectations in both durability and finish!”</i>
+          </div>
+        </div>
+        <div class="testmonial swiper-slide">
+          <div class="card">
+            <img src="assets/review2.avif" alt="User" class="user-image rounded-circle" />
+          <h3 class="name">Amit Sharma</h3>
+          <i class="feedback">“Excellent quality and stylish designs! The sofa set I purchased is both comfortable and elegant. Highly recommended!”</i>
+          </div>
+        </div>
+        <div class="testmonial swiper-slide">
+          <div class="card">
+            <img src="assets/review3.avif" alt="User" class="user-image rounded-circle" />
+          <h3 class="name">Sneha Kapoor </h3>
+          <i class="feedback">“Loved the minimalist study desk! Perfect for my workspace and delivered on time. Will shop again!”</i>
+        </div>
+          </div>
+        <div class="testmonial swiper-slide">
+          <div class="card">
+            <img src="assets/review4.avif" alt="User" class="user-image rounded-circle" />
+          <h3 class="name">Rahul Mehta </h3>
+          <i class="feedback">“Affordable prices with premium quality. The bed frame I ordered is sturdy and looks amazing in my bedroom.”</i>
+          </div>
+        </div>
+        <div class="testmonial swiper-slide">
+          <div class="card gap-0">
+            <img src="assets/review5.avif" alt="User" class="user-image rounded-circle" />
+          <h3 class="name">Neha Joshi</h3>
+          <i class="feedback"> “Great discounts and variety! The wardrobe I bought is spacious and matches my interior beautifully.”</i>
+          </div>
+        </div>
+        <div class="testmonial swiper-slide">
+          <div class=" card">
+            <img src="assets/review6.avif" alt="User" class="user-image rounded-circle" />
+          <h3 class="name">Vikram Singh</h3>
+          <i class="feedback">“The recliner chair is a game changer! Super comfortable and stylish. Best purchase I've made this year.”</i>
+          </div>
+        </div>
+      </div>
+      <!-- Pagination & Navigation -->
+      <div class="swiper-pagination mb-5 mt-3"></div>
+      <div class="swiper-slide-button swiper-button-prev"></div>
+      <div class="swiper-slide-button swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      spaceBetween: 25,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints:{
+         0 :{
+          slidesPerView: 1
+         },
+         768 :{
+          slidesPerView: 2
+         },
+         1024 :{
+          slidesPerView: 3
+         }
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    });
+  });
+</script>
+ <!------Reviews end-->
+ <!---Contact start-->
+ <section class="container-fluid Contact ">
+  <div class="container p-5">
+      <div class="main-section">
+        <h2 class="main-heading">📞Get in Touch with Us</h2>
+        <p class="main-description">
+          "We’re here to assist you! Whether you have questions about our products, need support, or just want to say hello, feel free to reach out. Our team is ready to help you with all your inquiries."
+        </p>
+    </div>
+      <div class="row pt-5">
+        <div class="col-md-6 contact-info pt-3">
+          <h5><i class="fa-solid fa-location-dot"></i> Address</h5>
+          <p>123 Main Street, City Center New Delhi - 110001, India</p>
+          <h5><i class="fa fa-phone" aria-hidden="true"></i> Phone</h5>
+          <p><a href="#" class="text">+123 456 7890</a></p>
+          <h5><i class="fa fa-envelope" aria-hidden="true"></i> Email</h5>
+          <p><a href="#" class=" text">support@homin.com</a></p>
+          <h5><i class="fa-regular fa-clock"></i> Working Hours</h5>
+          <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+          <h5>Follow Us</h5>
+          <div class="d-flex social-icons">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        </div>
+        <div class="col-md-6 card  ">
+            <h2 class="mb-4">Contact Us</h2>
+            <form class="">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Type your message here" required></textarea>
+                </div>
+                <button type="submit" class="btn  w-100">Send Message</button>
+            </form>
+        </div>
+    </div>
+  </div>
+ </section>
+  <!---Contact end-->
+   <!---Footer start-->
+   <footer>
+    <div class="footer-container">
+      <div class="footer-branding">
+        <div class="logo"><a href="index.html"><img src="assets/foot logo.png" alt="" class="w-90"></a></div>
+        <p>Premium furniture crafted with elegance & durability.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Main Street, City Center,<br> New Delhi - 110001, India</p>
+        <p><a href="#" class="text"><i class="fa-solid fa-phone"></i> +123 456 7890</a></p>
+        <p><a href="#" class=" text"><i class="fa-solid fa-envelope"></i> support@homin.com</a></p>
+      </div>
+  
+      <div class="footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to get the latest updates & offers.</p>
+        <input type="email" placeholder="Enter your email">
+        <button><a href="#" class="">Subscribe</a></button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="pt-1">&copy; 2025 Homin Dreamhome. All Rights Reserved.</p>
+      <div class="footer-social me-5 pe-5">
+        <a href="#" class=" text"><i class="fa-brands fa-facebook fs-2 me-3"></i></a>
+        <a href="#" class=" text"><i class="fa-brands fa-instagram fs-2 me-3"></i></a>
+        <a href="#" class=" text"><i class="fa-brands fa-twitter fs-2 me-3"></i></a>
+        <a href="#" class=" text"><i class="fa-brands fa-linkedin fs-2"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+    <!---Footer end-->
+    </body>
+    </html>

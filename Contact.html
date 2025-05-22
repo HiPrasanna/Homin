@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Webiste</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Style Css Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <!-- Style Css Link -->
+    <!---Swiper link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!---Swiper link-->
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+</head>
+<body>
+
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <div class="countdown-banner">
+            <p>Save 30% sitewide! Ends in</p>
+            <div class="countdown">
+              <div class="time-box"><span id="days">00</span>d</div>
+              <div class="time-box"><span id="hours">00</span>h</div>
+              <div class="time-box"><span id="minutes">00</span>m</div>
+              <div class="time-box"><span id="seconds">00</span>s</div>
+            </div>
+          </div>
+          <script src="script.js"></script>
+    </div>
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo"><a href="index.html"><img src="assets/logo4.png" alt="" class="w-90"></a></div>
+          <ul class="nav links">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Contact.html"><span class="first">Contact</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+          </ul>
+          </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Search" required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+      </nav>
+    </header>
+    <!-- Header End -->
+     <!---banner start-->
+     <section class="container-fluid banner2">
+      <div class="row container ">
+        <div class="col-md-4 chair ">
+          <img src="assets/bannerchair.png" />
+        </div>
+        <div class="col-md-4">
+          <h1>Contact Us</h1>
+        </div>
+        <div class="col-md-4 butterflies">
+          <img src="assets/butterflies.png" />
+        </div>
+       </div>
+     </section>
+     <!---banner end-->
+
+     <section class="container-fluid Contact ">
+      <div class="container p-5">
+          <div class="main-section">
+            <h2 class="main-heading">📞Get in Touch with Us</h2>
+            <p class="main-description">
+              "We’re here to assist you! Whether you have questions about our products, need support, or just want to say hello, feel free to reach out. Our team is ready to help you with all your inquiries."
+            </p>
+        </div>
+          <div class="row pt-5">
+            <div class="col-md-6 contact-info pt-3">
+              <h5><i class="fa-solid fa-location-dot"></i> Address</h5>
+              <p>123 Main Street, City Center New Delhi - 110001, India</p>
+              <h5><i class="fa fa-phone" aria-hidden="true"></i> Phone</h5>
+              <p><a href="#" class="text">+123 456 7890</a></p>
+              <h5><i class="fa fa-envelope" aria-hidden="true"></i> Email</h5>
+              <p><a href="#" class=" text">support@homin.com</a></p>
+              <h5><i class="fa-regular fa-clock"></i> Working Hours</h5>
+              <p>Monday - Saturday: 9:00 AM - 7:00 PM</p>
+              <h5>Follow Us</h5>
+              <div class="d-flex social-icons">
+                <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            </div>
+            <div class="col-md-6 card  ">
+                <h2 class="mb-4">Contact Us</h2>
+                <form class="">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Type your message here" required></textarea>
+                    </div>
+                    <button type="submit" class="btn  w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+      </div>
+     </section>
+      <!---Contact end-->
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="container">
+      <div class="row text-center">
+          <div class="col-md-4">
+              <div class="contact-box">
+                <i class="fa-solid fa-location-dot"></i>
+                  <h5>Our Location</h5>
+                  <p>123 Main Street, City, State, ZIP Code</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="contact-box">
+                <i class="fa-solid fa-phone"></i>
+                  <h5>Call Us</h5>
+                  <p>+1 234 567 890</p>
+              </div>
+          </div>
+          <div class="col-md-4">
+              <div class="contact-box">
+                <i class="fa-solid fa-envelope"></i>
+                  <h5>Email Us</h5>
+                  <p>support@furniturehaven.com</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+  <!-- Google Map Section -->
+<section class="container my-5">
+  <div class="main-section">
+    <h2 class="main-heading">Find Us on the Map</h2>
+    <p class="main-description">
+      Visit our store at the following location.
+    </p>
+</div>
+  <div class="map-container ratio ratio-16x9">
+      <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093705!2d144.9537353153128!3d-37.81720997975137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df2bdf97b%3A0x5045675218ce6e0!2sVictoria%2C%20Australia!5e0!3m2!1sen!2sus!4v1610971913214!5m2!1sen!2sus"
+          style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
+  </div>
+</section>
+
+     <!---Footer start-->
+   <footer>
+    <div class="footer-container">
+      <div class="footer-branding">
+        <div class="logo"><a href="index.html"><img src="assets/foot logo.png" alt="" class="w-90"></a></div>
+        <p>Premium furniture crafted with elegance & durability.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Main Street, City Center,<br> New Delhi - 110001, India</p>
+        <p><a href="#" class="text"><i class="fa-solid fa-phone"></i> +123 456 7890</a></p>
+        <p><a href="#" class=" text"><i class="fa-solid fa-envelope"></i> support@homin.com</a></p>
+      </div>
+  
+      <div class="footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to get the latest updates & offers.</p>
+        <input type="email" placeholder="Enter your email">
+        <button><a href="#" class="">Subscribe</a></button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="pt-1">&copy; 2025 Homin Dreamhome. All Rights Reserved.</p>
+      <div class="footer-social me-5 pe-5">
+        <a href="#" class=" text"><i class="fa-brands fa-facebook fs-2 me-3"></i></a>
+        <a href="#" class=" text"><i class="fa-brands fa-instagram fs-2 me-3"></i></a>
+        <a href="#" class=" text"><i class="fa-brands fa-twitter fs-2 me-3"></i></a>
+        <a href="#" class=" text"><i class="fa-brands fa-linkedin fs-2"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+    <!---Footer end-->
+     </body>
+     </html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Webiste</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Style Css Link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+    <!-- Style Css Link -->
+    <!---Swiper link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!---Swiper link-->
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome Cdn -->
+
+</head>
+<body>
+
+    <!-- Header Start -->
+    <header class="header">
+      <div>
+        <div class="countdown-banner">
+            <p>Save 30% sitewide! Ends in</p>
+            <div class="countdown">
+              <div class="time-box"><span id="days">00</span>d</div>
+              <div class="time-box"><span id="hours">00</span>h</div>
+              <div class="time-box"><span id="minutes">00</span>m</div>
+              <div class="time-box"><span id="seconds">00</span>s</div>
+            </div>
+          </div>
+          <script src="script.js"></script>
+    </div>
+      <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo"><a href="index.html"><img src="assets/logo4.png" alt="" class="w-90"></a></div>
+          <ul class="nav links">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><span class="first">Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">Blog</a>
+            </li>
+          </ul>
+          </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Search" required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!---banner start-->
+    <section class="container-fluid banner2">
+      <div class="row container ">
+        <div class="col-md-4 chair ">
+          <img src="assets/bannerchair.png" />
+        </div>
+        <div class="col-md-4">
+          <h1>Product Details</h1>
+        </div>
+        <div class="col-md-4 butterflies">
+          <img src="assets/butterflies.png" />
+        </div>
+       </div>
+     </section>
+     <!---banner end-->
+    
+     <!----product details start-->
+     <div class="container details mt-5">
+      <div class="row">
+        <div class="col-md-6">
+            <img id="product-image" src="" class="img-fluid" alt="Product Image">
+        </div>
+        <div class="col-md-6">
+            <h2 id="product-name"></h2>
+            <p id="product-desc"></p>
+            <h4 id="product-price"></h4>
+            <p><strong>Material:</strong> <span id="product-material"></span></p>
+            <p><strong>Dimensions:</strong> <span id="product-dimensions"></span></p>
+            <p><strong>Warranty:</strong> <span id="product-warranty"></span></p>
+            <p><strong>Offers:</strong> <span id="product-offers"></span></p>
+            <p><strong>Stock:</strong> <span id="product-stock"></span></p>
+            
+            <!-- New Additions -->
+            <p><strong>Available Colors:</strong> <span id="product-colors">Brown, Black</span></p>
+            <p><strong>Shipping:</strong> Free delivery in 3-5 business days</p>
+            <h5>Customer Reviews</h5>
+            <p>⭐⭐⭐⭐⭐ (4.9/5) based on 120 reviews</p>
+
+            <button class="btn me-3 btn-success buyNowBtn" data-id="${productIndex}">Buy Now</button>
+<button class="btn1 addToCartBtn" data-id="${productIndex}">Add to Cart</button>
+        </div>
+
+    </div>
+<script>
+  
+function displayProductDetails() {
+    
+    let urlParams = new URLSearchParams(window.location.search);
+    let productId = urlParams.get("id"); 
+
+    
+    productId = parseInt(productId);
+
+    
+    if (isNaN(productId) || productId < 0 || productId >= products.length) {
+        console.error("Invalid product ID");
+        return;
+    }
+
+    
+    let product = products[productId];
+
+    document.getElementById("product-image").src = product.imageUrl;
+    document.getElementById("product-name").innerText = product.name;
+    document.getElementById("product-price").innerText = product.price;
+    document.getElementById("product-desc").innerText = "A stylish and comfortable piece of furniture."; 
+}
+
+
+displayProductDetails();
+</script>
+    <!-- Related Products -->
+    <div class="mt-5">
+        <h3>Related Products</h3>
+        <div class="row pb-5">
+            <div class="col-md-3">
+              <div class="product-card">
+                <h4>Modern Dining Set<span class="w-90 ps-5  heart"><i class="fa-regular fa-heart"></i></span></h4>
+                <p class="pb-4">Chic dining table with cozy seating.</p>
+                <img src="assets/shop13.png" alt="" srcset="">
+                <div class="row">
+                  <div class="col-6">
+                    <h6>Price :<span class="price">₹10,500</span></h6>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                  </div>
+                  <div class="col-6">
+                    <a href="productdetails.html?id=19"><button>Add to Cart</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card">
+                <h4>Contemporary TV Unit<span class="w-90 ps-3  heart"><i class="fa-regular fa-heart"></i></span></h4>
+                <p>Modern media console for organized storage.</p>
+                <img src="assets/shop7.png" alt="" srcset="">
+                <div class="row">
+                  <div class="col-6">
+                    <h6>Price : <span class="price"> ₹4,999</span></h6>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                  </div>
+                  <div class="col-6">
+                    <a href="productdetails.html?id=11"><button>Add to Cart</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card">
+                <h4>Round Ottoman Seat<span class="w-90 ps-3  heart"><i class="fa-regular fa-heart"></i></span></h4>
+                <p>Soft and spacious ottoman for relaxation.</p>
+                <img src="assets/shop12.png" alt="" srcset="">
+                <div class="row">
+                  <div class="col-6">
+                    <h6>Price : <span class="price"> ₹4,500</span></h6>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                  </div>
+                  <div class="col-6">
+                    <a href="productdetails.html?id=17"><button>Add to Cart</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="product-card">
+                <h4>Royal King Bed<span class="w-90 ps-5  heart"><i class="fa-regular fa-heart"></i></span></h4>
+                <p>Premium wooden bed with soft cushioning.</p>
+                <img src="assets/shop3.png" alt="" srcset="">
+                <div class="row">
+                  <div class="col-6">
+                    <h6>Price :<span class="price">₹15,000</span></h6>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star "></i>
+                  <i class="fa-solid fa-star "></i>
+                </div>
+                  </div>
+                  <div class="col-6">
+                    <a href="productdetails.html?id=6"><button>Add to Cart</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+  <script src="data.js">
+</script>
+
+     <!----Product details end-->
+     <!---Footer start-->
+   <footer>
+    <div class="footer-container">
+      <div class="footer-branding">
+        <div class="logo"><a href="index.html"><img src="assets/foot logo.png" alt="" class="w-90"></a></div>
+        <p>Premium furniture crafted with elegance & durability.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Shop.html">Shop</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Contact Info</h3>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Main Street, City Center,<br> New Delhi - 110001, India</p>
+        <p><a href="#" class="text"><i class="fa-solid fa-phone"></i> +123 456 7890</a></p>
+        <p><a href="#" class=" text"><i class="fa-solid fa-envelope"></i> support@homin.com</a></p>
+      </div>
+  
+      <div class="footer-newsletter">
+        <h3>Newsletter</h3>
+        <p>Subscribe to get the latest updates & offers.</p>
+        <input type="email" placeholder="Enter your email">
+        <button><a href="#" class="">Subscribe</a></button>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="pt-1">&copy; 2025 Homin Dreamhome. All Rights Reserved.</p>
+      <div class="footer-social me-5 pe-5">
+        <a href="#" class=" text"><i class="fa-brands fa-facebook fs-2 me-3"></i></a>
+        <a href="#" class=" text"><i class="fa-brands fa-instagram fs-2 me-3"></i></a>
+        <a href="#" class=" text"><i class="fa-brands fa-twitter fs-2 me-3"></i></a>
+        <a href="#" class=" text"><i class="fa-brands fa-linkedin fs-2"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+    <!---Footer end-->
+    </body>
+    </html>

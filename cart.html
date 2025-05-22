@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Furniture Webiste</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+      <!-- Style Css Link -->
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="pages.css">
+      <!-- Style Css Link -->
+      <!---Swiper link-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      <!---Swiper link-->
+      <!-- Font Awesome Cdn -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <!-- Font Awesome Cdn -->
+  
+  </head>
+  <body>
+  
+      <!-- Header Start -->
+      <header class="header">
+        <div>
+          <div class="countdown-banner">
+              <p>Save 30% sitewide! Ends in</p>
+              <div class="countdown">
+                <div class="time-box"><span id="days">00</span>d</div>
+                <div class="time-box"><span id="hours">00</span>h</div>
+                <div class="time-box"><span id="minutes">00</span>m</div>
+                <div class="time-box"><span id="seconds">00</span>s</div>
+              </div>
+            </div>
+            <script src="script.js"></script>
+      </div>
+        <nav>
+          <input type="checkbox" id="show-search">
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+            <div class="logo"><a href="index.html"><img src="assets/logo4.png" alt="" class="w-90"></a></div>
+            <ul class="nav links">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Shop.html"><span class="first">Shop</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Blog.html">Blog</a>
+              </li>
+            </ul>
+            </div>
+              <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+              <form action="#" class="search-box">
+                  <input type="text" placeholder="Search" required>
+                  <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+              </form>
+        </nav>
+      </header>
+      <!-- Header End -->
+       <!---banner start-->
+       <section class="container-fluid banner2">
+        <div class="row container ">
+          <div class="col-md-4 chair ">
+            <img src="assets/bannerchair.png" />
+          </div>
+          <div class="col-md-4">
+            <h1>Payment Page</h1>
+          </div>
+          <div class="col-md-4 butterflies">
+            <img src="assets/butterflies.png" />
+          </div>
+         </div>
+       </section>
+       <!---banner end-->
+       <!-- Cart Section -->
+       <section class="container my-5">
+        <h2 class="text-center mb-4">Your Shopping Cart</h2>
+        <div id="cartItems" class="row"></div>
+
+        <!-- Total Price and Checkout -->
+        <div class="cart-footer mt-4">
+            <h4>Total: <span id="totalPrice">₹0</span></h4>
+            <button class="btn btn-success" onclick="checkout()">Proceed to Checkout</button>
+            <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+        </div>
+    </section>
+
+       <!----Cart page end-->
+       <!----Footer start---->
+       <footer>
+        <div class="footer-container">
+          <div class="footer-branding">
+            <div class="logo"><a href="index.html"><img src="assets/foot logo.png" alt="" class="w-90"></a></div>
+            <p>Premium furniture crafted with elegance & durability.</p>
+          </div>
+      
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="Shop.html">Shop</a></li>
+              <li><a href="About.html">About Us</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-contact">
+            <h3>Contact Info</h3>
+            <p><i class="fa-solid fa-location-dot"></i> 123 Main Street, City Center,<br> New Delhi - 110001, India</p>
+            <p><a href="#" class="text"><i class="fa-solid fa-phone"></i> +123 456 7890</a></p>
+            <p><a href="#" class=" text"><i class="fa-solid fa-envelope"></i> support@homin.com</a></p>
+          </div>
+      
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Subscribe to get the latest updates & offers.</p>
+            <input type="email" placeholder="Enter your email">
+            <button><a href="#" class="">Subscribe</a></button>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="pt-1">&copy; 2025 Homin Dreamhome. All Rights Reserved.</p>
+          <div class="footer-social me-5 pe-5">
+            <a href="#" class=" text"><i class="fa-brands fa-facebook fs-2 me-3"></i></a>
+            <a href="#" class=" text"><i class="fa-brands fa-instagram fs-2 me-3"></i></a>
+            <a href="#" class=" text"><i class="fa-brands fa-twitter fs-2 me-3"></i></a>
+            <a href="#" class=" text"><i class="fa-brands fa-linkedin fs-2"></i></a>
+          </div>
+        </div>
+      </footer>
+      
+        <!---Footer end-->
+        <script src="cart.js"></script>
+        </body>
+        </html>
